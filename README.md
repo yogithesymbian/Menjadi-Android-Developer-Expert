@@ -1,6 +1,8 @@
 # Menjadi-Android-Developer-Expert
 Menjadi Android Developer Expert
 
+I have learning on ```Dicoding.com```
+
 ## Build Gradle ( Project: ScholarshipExpertScodeIDEV )
 ```
 
