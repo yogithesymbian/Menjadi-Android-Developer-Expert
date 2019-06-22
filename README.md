@@ -3,7 +3,7 @@ Menjadi Android Developer Expert
 
 I have learning on ```Dicoding.com```
 
-![SS](https://drive.google.com/open?id=1-5J0pYCPNJqfvdFVVFXMk7SAkDiFlRfh)
+![SS](https://1.bp.blogspot.com/-I4Wxq6zkSU0/XQ4HV3Z--xI/AAAAAAAAAYY/OKVDr4hsVUod6S0OCdpOv94joz6ID6tPwCLcBGAs/s1600/Screenshot_2019-06-22-18-42-44-810_id.scode.scholarshipexpertscodeidev.png)
 
 ## Build Gradle ( Project: ScholarshipExpertScodeIDEV )
 ```
