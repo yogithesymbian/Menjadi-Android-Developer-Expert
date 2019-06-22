@@ -3,6 +3,8 @@ Menjadi Android Developer Expert
 
 I have learning on ```Dicoding.com```
 
+![SS](https://drive.google.com/open?id=1-5J0pYCPNJqfvdFVVFXMk7SAkDiFlRfh)
+
 ## Build Gradle ( Project: ScholarshipExpertScodeIDEV )
 ```
 
