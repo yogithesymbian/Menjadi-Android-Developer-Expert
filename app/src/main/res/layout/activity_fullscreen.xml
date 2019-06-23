@@ -1,0 +1,146 @@
+<androidx.appcompat.widget.FitWindowsFrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context="id.scode.submission.FullscreenActivity"
+        android:background="@android:color/white">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:id="@+id/item_photo_book_full"
+        android:layout_gravity="center"
+        android:layout_marginBottom="70dp"
+        android:scaleType="centerCrop"
+        android:backgroundTintMode="screen"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:src="@android:color/darker_gray"
+        tools:targetApi="lollipop" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:keepScreenOn="true"
+        tools:text="@string/dummy_content"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_buku"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:keepScreenOn="true"
+        tools:text="BUKU KEREN"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fullscreen_content_above"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|bottom|center_horizontal"
+        android:layout_marginBottom="60dp"
+        android:keepScreenOn="true"
+        tools:text="source image"
+        android:textSize="7sp"
+        android:textStyle="bold"
+        tools:ignore="SmallSp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/detail_buku_title"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_vertical|bottom"
+        android:layout_marginBottom="173dp"
+        android:keepScreenOn="true"
+        android:text="@string/detail_buku"
+        android:textColor="@android:color/white"
+        android:textSize="11sp"
+        tools:ignore="SmallSp" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/detail_buku"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_vertical|bottom"
+        android:layout_marginBottom="80dp"
+        android:keepScreenOn="true"
+        tools:text="#CeritaTentang Kebiasaan Baik
+        #Janganlah seseorang di antaramu
+        makan
+        dengan tangan kiri. Dan janganlah minum pula dengan tangan kirinya. Maka sesungguhnya setan makan dan minum dengan tangan kirinya. (HR. Muslim)"
+        android:textColor="@android:color/white"
+        android:textSize="11sp"
+        tools:ignore="SmallSp" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <androidx.appcompat.widget.FitWindowsFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/uiCustomeColor1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent"
+            tools:targetApi="lollipop">
+
+            <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dummy_button_harga"
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1"
+                    tools:text="Rp 999.999"
+                    android:layout_gravity="center"
+                    app:icon="@drawable/ic_shopping_cart_black_24dp"
+
+                />
+
+            <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/trial_read"
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1"
+                    android:text="@string/baca_buku"
+                    android:layout_gravity="center"
+                    app:icon="@drawable/book_read"
+
+                    />
+            <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/offline_read"
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1"
+                    android:text="@string/keranjang"
+                    android:layout_gravity="center"
+                    app:icon="@drawable/ic_add_shopping_cart_black_24dp"
+
+                    />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.FitWindowsFrameLayout>
+
+</androidx.appcompat.widget.FitWindowsFrameLayout>

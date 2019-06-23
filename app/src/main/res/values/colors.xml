@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#004d40</color>
+    <color name="colorPrimaryDark">#455A64</color>
+    <color name="colorAccent">#004d40</color>
+    <color name="subTitle">#00251a</color>
+    <!--#FF5722-->
+
+    <color name="uiCustomeColor">#00695c</color>
+
+    <color name="uiCustomeColor1">#439889</color>
+    <color name="black_overlay">#004d40</color>
+    <color name="blackB3">#B3000000</color>
+    <color name="whiteB3">#B3FFFFFF</color>
+
+
+</resources>

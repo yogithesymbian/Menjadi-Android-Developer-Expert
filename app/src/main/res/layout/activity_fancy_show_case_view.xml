@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/photo_1"
+        android:backgroundTint="@color/colorPrimary"
+        android:backgroundTintMode="multiply"
+        tools:context="id.scode.selfTaught_FancyShowCaseView.FancyMain">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/titleCaseIni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/showcaseview_prog"
+                android:textSize="13sp"
+                android:textStyle="bold"
+
+                android:layout_marginTop="2dp"
+                android:gravity="center_horizontal"
+                android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
+                />
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/line"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                />
+
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:id="@+id/btnNoFocus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="148dp"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/no_focus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:id="@+id/btnFocus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/focus"
+            app:layout_constraintEnd_toEndOf="@+id/btnNoFocus"
+            app:layout_constraintStart_toStartOf="@+id/btnNoFocus"
+            app:layout_constraintTop_toBottomOf="@+id/btnNoFocus"/>
+
+    <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:id="@+id/btnLarger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="larger"
+            app:layout_constraintEnd_toEndOf="@+id/btnFocus"
+            app:layout_constraintStart_toStartOf="@+id/btnFocus"
+            app:layout_constraintTop_toBottomOf="@+id/btnFocus"/>
+
+    <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:id="@+id/btnColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:text="color"
+            app:layout_constraintEnd_toEndOf="@+id/btnLarger"
+            app:layout_constraintStart_toStartOf="@+id/btnLarger"
+            app:layout_constraintTop_toBottomOf="@+id/btnLarger"
+            android:layout_marginRight="8dp"/>
+
+    <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:id="@+id/btnLongerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="longerText"
+            app:layout_constraintEnd_toEndOf="@+id/btnColor"
+            app:layout_constraintStart_toStartOf="@+id/btnColor"
+            app:layout_constraintTop_toBottomOf="@+id/btnColor"/>
+
+    <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:id="@+id/btnCusAnim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="custome animation"
+            app:layout_constraintEnd_toEndOf="@+id/btnLongerText"
+            app:layout_constraintStart_toStartOf="@+id/btnLongerText"
+            app:layout_constraintTop_toBottomOf="@+id/btnLongerText"/>
+
+    <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:id="@+id/btnCusView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:text="custome "
+            app:layout_constraintEnd_toEndOf="@+id/btnCusAnim"
+            app:layout_constraintStart_toStartOf="@+id/btnCusAnim"
+            app:layout_constraintTop_toBottomOf="@+id/btnCusAnim"
+            android:layout_marginRight="8dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/followYogi"
+            android:layout_width="61dp"
+            android:layout_height="16dp"
+
+
+            android:text="@string/aw_yogi"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnCusView"
+            app:layout_constraintTop_toBottomOf="@+id/btnCusView"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

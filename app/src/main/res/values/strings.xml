@@ -1,0 +1,157 @@
+<resources>
+    <string name="app_name">ScholarshipExpertScodeIDEV</string>
+    <string name="operator">[01] OPERATOR</string>
+    <string name="panjang">Panjang</string>
+    <string name="lebar">Lebar</string>
+    <string name="hasil">Hasil</string>
+    <string name="hasil_operator">Hasil Operator</string>
+    <string name="_02_my_intent">[02] MY INTENT</string>
+    <string name="activity_latihan_bar_volume">Activity : Latihan Bar Volume</string>
+    <string name="tinggi">Tinggi</string>
+    <string name="moveactivity">MoveActivity</string>
+    <string name="move_with_data">MOVE WITH DATA</string>
+    <string name="move_with_object">MOVE WITH OBJECT</string>
+    <string name="activity_myintentscode">Activity : MyIntentScode</string>
+    <string name="dial_a_number">DIAL A NUMBER</string>
+    <string name="move_activity_for_result">Move Activity For Result</string>
+    <string name="resutl_from_activity">Resutl From Activity</string>
+    <string name="move_activity">Move Activity</string>
+    <string name="transceive_data">Transceive Data</string>
+    <string name="_50">50</string>
+    <string name="_100">100</string>
+    <string name="_150">150</string>
+    <string name="_200">200</string>
+    <string name="choose_the_number">Choose the Number</string>
+    <string name="choose">Choose</string>
+
+    <string name="content_text">Google officially announced its much-anticipated Pixel phones; the Pixel and Pixel XL, on October 4. We attended Google’s London UK event, mirroring the main one taking place in San Francisco, US, where the firm unwrapped the new Android 7.1 Nougat devices which will apparently usurp Google’s long-standing Nexus series.</string>
+    <string name="content_specs_display">5.0 inches\n
+    FHD AMOLED at 441ppi\n
+    2.5D Corning® Gorilla® Glass 4</string>
+    <string name="content_specs_size">5.6 x 2.7 x 0.2 ~ 0.3 inches 143.8 x 69.5 x 7.3 ~ 8.5 mm</string>
+    <string name="content_specs_battery">2,770 mAh battery\n
+    Standby time (LTE): up to 19 days\n
+    Talk time (3g/WCDMA): up to 26 hours\n
+    Interne\t use time (Wi-Fi): up to 13 hours\n
+    Internet use time (LTE): up to 13 hours\n
+    Video playback: up to 13 hours\n
+    Audio playback (via headset): up to 110 hours\n
+    Fast charging: up to 7 hours of use from only 15 minutes of charging</string>
+    <string name="title_activity_past_perfect">PastPerfect</string>
+    <string name="large_text">
+        "The 10 sentence.\n\n by Yogi Arif Widodo ( 17 615 006 ) \n\n"
+
+        "(+) You had studied physics before you move to China.\n"
+        "(-)  You had not studied physics before you move to China.\n"
+        "(?) Had you studied physics before you move to China.\n"
+        "\n\n"
+        "(+) My mother had slept before I came.\n"
+        "(-) My mother had not slept before I came.\n"
+        "(?) Had my mother slept before I came?.\n"
+        "\n\n"
+        "(+) Rina had finished it when he came her house.\n"
+        "(-) Rina had not finished it when he came her house.\n"
+        "(?) Had Rina finished it when he came her house?.\n"
+
+        "\n\n"
+
+        "(+) She had eaten when I called her.\n"
+        "(-) She had not eaten when I called her.\n"
+        "(-) She had not eaten when I called her.\n"
+        "\n\n"
+        "(+) Before I asked her, she had taken bath.\n"
+        "(-) Before I asked her, she had taken bath.\n"
+        "(?) Had she taken bath before I asked her?.\n"
+
+        "\n\n"
+
+        "(+) Alan said that he had gone to school when Sinta called him.\n"
+        "(-)  Alan said that he had not gone to school when Sinta called him.\n"
+        "(?) Had Alan said that he gone to school when Sinta called him?.\n"
+        "\n\n"
+        "(+) The student had gotten a gift after they finished the test.\n"
+        "(-) The student had not gotten a gift after they finished the test.\n"
+        "(?) Had the student gotten a gift after they finished the test?.\n"
+        "\n\n"
+        "(+) Yuna had read the book two times.\n"
+        "(-) Yuna had not read the book two times.\n"
+        "(?) Had Yuna read the book two times?.\n"
+
+        "\n\n"
+        "(+) He had gone home before Miss Anna finished her lesson.\n"
+        "(-) He had not  gone home before Miss Anna finished her lesson.\n"
+        "(?) Had he gone home before Miss Anna finished her lesson?.\n"
+
+        "\n\n"
+        "(+) after they had slept, they went to rektor.\n"
+        "(-) after they had slept, they did not go to rektor.\n"
+        "(?) after they had slept, did they go to to rektor.\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="view_and_viewgroups">View and Viewgroups</string>
+    <string name="_03_view_and_viewgroups">[03] View and ViewGroups</string>
+    <string name="_6_photos">6 Kenangan</string>
+    <string name="battery">Battery</string>
+    <string name="narenda_wicaksono">Narenda Wicaksono</string>
+    <string name="size">Size</string>
+    <string name="display">Display</string>
+    <string name="spesifikasi">Spesifikasi</string>
+    <string name="_999">$999</string>
+    <string name="stock_x99">Stock x99</string>
+    <string name="todo">TODO</string>
+    <string name="di_jual_oleh">Di Jual Oleh</string>
+    <string name="beli">Beli</string>
+    <string name="_04_recycleview">[04] RecycleView</string>
+    <string name="list">List</string>
+    <string name="grid">Grid</string>
+    <string name="cardview">CardView</string>
+    <string name="fav">Favorite</string>
+    <string name="share">Share</string>
+    <string name="title_activity_submission_home">NaBuINA</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="buku_tersimpan">Buku Tersimpan</string>
+    <string name="about_nabuina">About</string>
+    <string name="simpan_buku">Simpan Buku</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="baca_offline">Baca Offline</string>
+    <string name="baca_buku">Baca Buku</string>
+    <string name="keranjang">+ Keranjang</string>
+    <string name="lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_sed_do_eiusmod_tempor_incididunt_ut_labore_et_dolore_magna_aliqua_ut_enim_ad_minim_veniam_lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_sed_do_eiusmod_tempor_incididunt_ut_labore_et_dolore_magna_aliqua_ut_enim_ad_minim_veniam">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</string>
+    <string name="detail_buku">Detail Buku</string>
+    <string name="title_activity_dicoding_profile">Tentang Saya</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="yogi_arif_widodo">Yogi Arif Widodo</string>
+    <string name="yogirenbox33_gmail_com">yogirenbox33@gmail.com</string>
+    <string name="back">Back</string>
+    <string name="pt_scodeid">PT SCODEID</string>
+    <string name="akuU">
+        "Perusahaan yang insyallah saya buat \n\n"
+
+        "Untuk sekarang ini saya sedang memperbanyak portfolio\n"
+        "Project dan Kerja Sama dengan perusahaan yang telah \n"
+        "ada dan hal lainya .\n"
+    </string>
+    <string name="nabuina">NaBuINA</string>
+    <string name="close">close</string>
+    <string name="my_custome_view">My Custome View</string>
+    <string name="no_focus">No focus</string>
+    <string name="focus">focus</string>
+    <string name="showcaseview_prog">ShowCaseView - Prog</string>
+    <string name="line">____________________________________</string>
+    <string name="aw_yogi">\@aw.yogi</string>
+    <string name="menjadi_android_dev_expert">Menjadi Android Dev Expert</string>
+    <string name="recycler_view">Recycler View</string>
+    <string name="belajar_membuat_apps_android_newbie">Belajar Membuat Apps Android Newbie</string>
+    <string name="_05_fragment_activty">[05] Fragment Activty</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="to_category">to category</string>
+</resources>

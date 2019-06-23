@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="id.scode.submission.DicodingProfile"
+    tools:showIn="@layout/app_bar_dicoding_profile">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/usApps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nabuina"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/usAppsDetail"
+        android:layout_width="match_parent"
+        android:layout_height="286dp"
+        android:text="NaBuINA ( Buku Anak Islam Berbahasa Indonesia - Arab ) adalah apps yang saya buat khusus untuk menyelessaikan kelas dicoding. Dalam tahap tester (percobaan) / Maintenance banyak sekali bug dan beberapa telah saya perbaiki secara umum, Semoga Apps ini bermanfaat untuk kedapanya , jika dilakukan tahap pengembangan. \n \n Apps ini Khusus untuk membaca buku - buku dengan category Agama / Pendidikan Muslim , Apps ini memiliki feature\n 1. Baca Offline\n 2. Baca Online\n 3. Transaksi Jual Beli Buku\n 4. Banyak Buku / E-Book Gratis\n\n Tentu Apps ini Masih V1.1 Feature di atas belum di buat :D"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/usApps"
+        app:layout_constraintStart_toStartOf="@+id/usApps"
+        app:layout_constraintTop_toBottomOf="@+id/usApps" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pt_scodeid"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usAppsDetail" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/akuU"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/us"
+        app:layout_constraintStart_toStartOf="@+id/us"
+        app:layout_constraintTop_toBottomOf="@+id/us" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

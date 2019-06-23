@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="id.scode.exercise03ViewAndViewgroup.ViewGroupActivity"
+            android:background="@android:color/white">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <androidx.appcompat.widget.FitWindowsFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/pixel_google"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/todo"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/_6_photos"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_collections_white_18dp"
+                    android:drawablePadding="4dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:background="#4D000000"
+
+                    android:drawableStart="@drawable/ic_collections_white_18dp"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"/>
+        </androidx.appcompat.widget.FitWindowsFrameLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+                android:textSize="32sp"
+                android:text="@string/_999"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="8dp"
+
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+                android:text="@string/stock_x99"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+                android:text="@string/content_text"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:lineSpacingMultiplier="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+                android:text="@string/spesifikasi"
+                android:layout_marginBottom="8dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:text="@string/di_jual_oleh"
+                android:layout_marginBottom="8dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageGoogle"
+                    android:src="@drawable/photo_2"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+
+                    />
+
+            <androidx.appcompat.widget.AppCompatTextView
+
+                    android:text="@string/narenda_wicaksono"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageGoogle"
+                    android:layout_toRightOf="@+id/imageGoogle"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+
+        </RelativeLayout>
+
+        <com.google.android.material.button.MaterialButton
+
+                android:text="@string/beli"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>

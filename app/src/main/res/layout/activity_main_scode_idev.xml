@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/uiCustomeColor"
+        android:orientation="vertical"
+        android:fillViewport="true"
+        tools:context="id.scode.scholarshipexpertscodeidev.MainActivityScodeIdev">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:background="@color/uiCustomeColor1"
+            android:id="@+id/linearLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp">
+
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnActOpertorScode"
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                    android:layout_width="238dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:layout_marginTop="32dp"
+                    android:textAllCaps="false"
+                    android:text="@string/operator"
+                    android:textColor="@color/whiteB3"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/androidNewbie"
+                    app:layout_constraintStart_toStartOf="@+id/androidNewbie"
+                    app:layout_constraintTop_toBottomOf="@+id/androidNewbie"
+                    tools:ignore="SmallSp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintHorizontal_bias="0.51"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textviewSatu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_latihan_bar_volume"
+                    android:textColor="@color/blackB3"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/btnActOpertorScode"
+                    app:layout_constraintStart_toStartOf="@+id/btnActOpertorScode"
+                    app:layout_constraintTop_toBottomOf="@+id/androidNewbie"
+                    tools:ignore="SmallSp"/>
+
+            <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:id="@+id/btnMyIntentScode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/_02_my_intent"
+                    android:textSize="12sp"
+                    android:gravity="left|center"
+                    android:textColor="@color/whiteB3"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/btnActOpertorScode"
+                    app:layout_constraintStart_toStartOf="@+id/btnActOpertorScode"
+                    app:layout_constraintTop_toBottomOf="@+id/btnActOpertorScode"
+                    tools:ignore="SmallSp"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/activity_myintentscode"
+                    android:textColor="@color/blackB3"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/btnMyIntentScode"
+                    app:layout_constraintEnd_toEndOf="@+id/btnMyIntentScode"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/btnMyIntentScode"
+                    app:layout_constraintTop_toBottomOf="@+id/btnActOpertorScode"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:id="@+id/btnViewAndViewgroups"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/_03_view_and_viewgroups"
+                    android:gravity="left|center"
+                    android:textSize="12sp"
+                    android:textColor="@color/whiteB3"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/btnMyIntentScode"
+                    app:layout_constraintStart_toStartOf="@+id/btnMyIntentScode"
+                    app:layout_constraintTop_toBottomOf="@+id/btnMyIntentScode"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewTiga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/view_and_viewgroups"
+                    android:textColor="@color/blackB3"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/btnViewAndViewgroups"
+                    app:layout_constraintEnd_toEndOf="@+id/btnViewAndViewgroups"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/btnViewAndViewgroups"
+                    app:layout_constraintTop_toBottomOf="@+id/btnMyIntentScode"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:id="@+id/btnRecycleView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/buttondraw"
+                    android:text="@string/_04_recycleview"
+                    android:gravity="left|center"
+                    android:textColor="@color/whiteB3"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/btnViewAndViewgroups"
+                    app:layout_constraintStart_toStartOf="@+id/btnViewAndViewgroups"
+                    app:layout_constraintTop_toBottomOf="@+id/btnViewAndViewgroups"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submission"
+                    android:textColor="@color/blackB3"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/btnSubmission"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/btnSubmission"
+                    app:layout_constraintTop_toBottomOf="@+id/btnRecycleView"/>
+
+            <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:id="@+id/btnSubmission"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/buttondraw"
+                    android:text="NaBuINA"
+                    app:iconSize="25dp"
+                    app:iconPadding="8dp"
+                    android:textAllCaps="false"
+                    android:gravity="left|center"
+                    app:icon="@mipmap/ic_nabuina"
+                    android:textColor="@color/whiteB3"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/btnRecycleView"
+                    app:layout_constraintStart_toStartOf="@+id/btnRecycleView"
+                    app:layout_constraintTop_toBottomOf="@+id/btnRecycleView"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewEmpat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recycler_view"
+                    android:textColor="@color/blackB3"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/btnRecycleView"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/btnRecycleView"
+                    app:layout_constraintTop_toBottomOf="@+id/btnViewAndViewgroups"/>
+
+
+            <View
+                    android:id="@+id/pageringBro"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/uiCustomeColor"
+                    app:layout_constraintBottom_toTopOf="@+id/btnExpertDicoding"
+                    app:layout_constraintTop_toBottomOf="@+id/btnSubmission"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+
+            </View>
+
+            <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:id="@+id/btnExpertDicoding"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    app:iconPadding="4dp"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    app:icon="@drawable/ic_menu_send"
+                    android:text="@string/menjadi_android_dev_expert"
+                    android:textAllCaps="false"
+                    android:textStyle="italic"
+                    app:layout_constraintEnd_toEndOf="@+id/androidNewbie"
+                    app:layout_constraintStart_toStartOf="@+id/androidNewbie"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/btnSubmission"
+                    android:layout_marginTop="16dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    app:elevation="5dp"
+                    app:iconPadding="4dp"
+                    android:id="@+id/androidNewbie"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:icon="@drawable/ic_menu_send"
+                    android:text="@string/belajar_membuat_apps_android_newbie"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:id="@+id/btnFragment"
+
+                    android:layout_width="238dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/_05_fragment_activty"
+                    android:textSize="11sp"
+                    android:textColor="@color/whiteB3"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/btnExpertDicoding"
+                    app:layout_constraintEnd_toEndOf="@+id/btnExpertDicoding"
+                    app:layout_constraintStart_toStartOf="@+id/btnExpertDicoding"
+                    android:layout_marginBottom="32dp"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

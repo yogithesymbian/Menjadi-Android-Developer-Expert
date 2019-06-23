@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<style name="myStyleText" parent="@android:style/Widget.TextView">-->
+        <!--<item name="android:textSize">20sp</item>-->
+        <!--<item name="android:textColor">#00FF00</item>-->
+        <!--<item name="android:fontFamily">sans-serif-smallcaps</item>-->
+    <!--</style>-->
+</resources>
