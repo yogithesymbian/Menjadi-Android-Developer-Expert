@@ -1,44 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="id.scode.scholarshipexpertscodeidev">
+          xmlns:tools="http://schemas.android.com/tools"
+          package="id.scode.scholarshipexpertscodeidev">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 
+    <!--
+    |=========================================================
+    | Learning Android For Newbie @dicoding.com  ✓ done      |
+    | Inspection Code : Android 1 error 68 warning           |
+    | Java 78 warnings                                       |
+    | Spelling 987 typos                                     |
+    | XML 12 warning                                         |
+    | =======================================================|
+    | Learning Android Be Expert @dicoding.com ✓ almost done |
+    | Inspection Code : none                                 |
+    |=========================================================
+    -->
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_nabuina"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_nabuina_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning">
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_nabuina"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_nabuina_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="id.scode.exercise05Fragment.MyFlexibleFragmentScodeK">
+        </activity>
+        <activity android:name="id.scode.exercise02MyIntent.MoveWithPojoK">
+        </activity>
+        <activity android:name="id.scode.exercise02MyIntent.MoveWithDataK">
+        </activity>
+        <activity android:name="id.scode.exercise02MyIntent.MoveActivityK">
+        </activity>
+        <activity android:name="id.scode.exercise02MyIntent.IntentScodExerciseK">
+        </activity>
+        <activity android:name="id.scode.exercise02MyIntent.IntentResultActivityK">
+        </activity>
+        <activity android:name="id.scode.exercise01Newbie.ExerciseLatihanSatuK">
+        </activity>
         <activity android:name=".MainActivityScodeIdev">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="id.scode.exercise01Newbie.ExerciseLatihanSatu" />
-        <activity android:name="id.scode.exercise02MyIntent.IntentScodExercise" />
-        <activity android:name="id.scode.exercise02MyIntent.MoveActivity" />
-        <activity android:name="id.scode.exercise02MyIntent.MoveWithData" />
-        <activity android:name="id.scode.exercise02MyIntent.MoveWithPojo" />
-        <activity android:name="id.scode.exercise02MyIntent.IntentResultActivity" />
-        <activity android:name="id.scode.exercise03ViewAndViewgroup.ViewGroupActivity" />
+        <activity android:name="id.scode.exercise01Newbie.ExerciseLatihanSatu"/>
+        <activity android:name="id.scode.exercise02MyIntent.IntentScodExercise"/>
+        <activity android:name="id.scode.exercise02MyIntent.MoveActivity"/>
+        <activity android:name="id.scode.exercise02MyIntent.MoveWithData"/>
+        <activity android:name="id.scode.exercise02MyIntent.MoveWithPojo"/>
+        <activity android:name="id.scode.exercise02MyIntent.IntentResultActivity"/>
+        <activity android:name="id.scode.exercise03ViewAndViewgroup.ViewGroupActivity"/>
         <activity
-            android:name="id.scode.TugasYogi.PastPerfect"
-            android:label="@string/title_activity_past_perfect"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="id.scode.exercise04ReyclerView.ListView" />
+                android:name="id.scode.TugasYogi.PastPerfect"
+                android:label="@string/title_activity_past_perfect"
+                android:theme="@style/AppTheme.NoActionBar"
+                tools:ignore="InnerclassSeparator"/>
+        <activity android:name="id.scode.exercise04ReyclerView.ListView"/>
         <activity
-            android:name="id.scode.submission.SubmissionHome"
-            android:label="@string/title_activity_submission_home">
+                android:name="id.scode.submission.SubmissionHome"
+                android:label="@string/title_activity_submission_home">
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -49,17 +76,15 @@
 
         </activity>
         <activity
-            android:name="id.scode.submission.FullscreenActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_fullscreen"
-            android:theme="@style/FullscreenTheme">
-
+                android:name="id.scode.submission.FullscreenActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="@string/title_activity_fullscreen"
+                android:theme="@style/FullscreenTheme">
         </activity>
         <activity
-            android:name="id.scode.submission.DicodingProfile"
-            android:label="@string/title_activity_dicoding_profile"
-            android:theme="@style/AppTheme.NoActionBar">
-
+                android:name="id.scode.submission.DicodingProfile"
+                android:label="@string/title_activity_dicoding_profile"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name="id.scode.selfTaught_FancyShowCaseView.FancyMain">
 
@@ -71,7 +96,6 @@
             <!-- </intent-filter> -->
         </activity>
         <activity android:name="id.scode.exercise05Fragment.MyFlexibleFragmentScode">
-
         </activity>
     </application>
 

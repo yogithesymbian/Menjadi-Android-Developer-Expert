@@ -25,7 +25,7 @@
         android:id="@+id/usAppsDetail"
         android:layout_width="match_parent"
         android:layout_height="286dp"
-        android:text="NaBuINA ( Buku Anak Islam Berbahasa Indonesia - Arab ) adalah apps yang saya buat khusus untuk menyelessaikan kelas dicoding. Dalam tahap tester (percobaan) / Maintenance banyak sekali bug dan beberapa telah saya perbaiki secara umum, Semoga Apps ini bermanfaat untuk kedapanya , jika dilakukan tahap pengembangan. \n \n Apps ini Khusus untuk membaca buku - buku dengan category Agama / Pendidikan Muslim , Apps ini memiliki feature\n 1. Baca Offline\n 2. Baca Online\n 3. Transaksi Jual Beli Buku\n 4. Banyak Buku / E-Book Gratis\n\n Tentu Apps ini Masih V1.1 Feature di atas belum di buat :D"
+        android:text="@string/dprofile_desc"
         android:textSize="12sp"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="@+id/usApps"

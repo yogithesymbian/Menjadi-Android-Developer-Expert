@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
@@ -14,7 +15,7 @@
         android:layout_marginRight="@dimen/activity_horizontal_margin"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
         android:src="@android:color/darker_gray"
-        />
+        tools:ignore="RtlHardcoded"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,7 +23,7 @@
         android:layout_toEndOf="@id/item_photo"
         android:layout_centerVertical="true"
         android:orientation="vertical"
-        >
+        tools:ignore="RtlHardcoded">
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -31,13 +32,13 @@
             android:textStyle="bold"
             android:textSize="16sp"
             android:layout_marginBottom="8dp"
-            />
+            tools:targetApi="o"/>
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tv_item_remarks"
             android:tooltipText="Presiden Pertama RI"
-            />
+            tools:targetApi="o"/>
 
     </LinearLayout>
 

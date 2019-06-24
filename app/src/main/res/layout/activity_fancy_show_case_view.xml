@@ -67,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="larger"
+            android:text="@string/activityfancy_larger"
             app:layout_constraintEnd_toEndOf="@+id/btnFocus"
             app:layout_constraintStart_toStartOf="@+id/btnFocus"
             app:layout_constraintTop_toBottomOf="@+id/btnFocus"/>
@@ -79,11 +79,12 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginTop="8dp"
-            android:text="color"
+            android:text="@string/activityfancy_color"
             app:layout_constraintEnd_toEndOf="@+id/btnLarger"
             app:layout_constraintStart_toStartOf="@+id/btnLarger"
             app:layout_constraintTop_toBottomOf="@+id/btnLarger"
-            android:layout_marginRight="8dp"/>
+            android:layout_marginRight="8dp"
+            tools:ignore="RtlHardcoded"/>
 
     <com.google.android.material.button.MaterialButton
             style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
@@ -91,7 +92,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="longerText"
+            android:text="@string/activityfancy_longertext"
             app:layout_constraintEnd_toEndOf="@+id/btnColor"
             app:layout_constraintStart_toStartOf="@+id/btnColor"
             app:layout_constraintTop_toBottomOf="@+id/btnColor"/>
@@ -102,7 +103,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="custome animation"
+            android:text="@string/activityfancy_cs_anim"
             app:layout_constraintEnd_toEndOf="@+id/btnLongerText"
             app:layout_constraintStart_toStartOf="@+id/btnLongerText"
             app:layout_constraintTop_toBottomOf="@+id/btnLongerText"/>
@@ -114,11 +115,12 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginTop="8dp"
-            android:text="custome "
+            android:text="@string/activityfancy_custome"
             app:layout_constraintEnd_toEndOf="@+id/btnCusAnim"
             app:layout_constraintStart_toStartOf="@+id/btnCusAnim"
             app:layout_constraintTop_toBottomOf="@+id/btnCusAnim"
-            android:layout_marginRight="8dp"/>
+            android:layout_marginRight="8dp"
+            tools:ignore="RtlHardcoded"/>
 
     <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/followYogi"

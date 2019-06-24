@@ -5,10 +5,11 @@
                                                    android:layout_width="match_parent"
                                                    android:layout_height="match_parent"
                                                    android:background="@color/uiCustomeColor1"
-                                                   tools:context="id.scode.exercise02MyIntent.IntentScodExercise">
+                                                   tools:context="id.scode.exercise02MyIntent.IntentScodExercise"
+                                                   android:id="@+id/clayout_menu_intent">
 
     <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnActivity"
+            android:id="@+id/btn_move_activity"
             android:layout_width="0dp"
             style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
             android:layout_height="wrap_content"
@@ -22,31 +23,31 @@
             app:layout_constraintTop_toTopOf="parent"/>
 
     <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnMoveWdata"
+            android:id="@+id/btn_move_w_data"
             style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/move_with_data"
             android:background="@drawable/buttondraw"
-            app:layout_constraintEnd_toEndOf="@+id/btnActivity"
-            app:layout_constraintStart_toStartOf="@+id/btnActivity"
-            app:layout_constraintTop_toBottomOf="@+id/btnActivity"/>
+            app:layout_constraintEnd_toEndOf="@+id/btn_move_activity"
+            app:layout_constraintStart_toStartOf="@+id/btn_move_activity"
+            app:layout_constraintTop_toBottomOf="@+id/btn_move_activity"/>
 
     <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnMoveWobject"
+            android:id="@+id/btn_move_w_object"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/move_with_object"
             android:background="@drawable/buttondraw"
             style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-            app:layout_constraintEnd_toEndOf="@+id/btnMoveWdata"
-            app:layout_constraintStart_toStartOf="@+id/btnMoveWdata"
-            app:layout_constraintTop_toBottomOf="@+id/btnMoveWdata"/>
+            app:layout_constraintEnd_toEndOf="@+id/btn_move_w_data"
+            app:layout_constraintStart_toStartOf="@+id/btn_move_w_data"
+            app:layout_constraintTop_toBottomOf="@+id/btn_move_w_data"/>
 
     <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnDialNum"
+            android:id="@+id/btn_move_dial_num"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
@@ -55,24 +56,24 @@
             android:background="@drawable/buttondraw"
             android:text="@string/dial_a_number"
             style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-            app:layout_constraintEnd_toEndOf="@+id/btnMoveWobject"
-            app:layout_constraintStart_toStartOf="@+id/btnMoveWobject"
-            app:layout_constraintTop_toBottomOf="@+id/btnMoveWobject"/>
+            app:layout_constraintEnd_toEndOf="@+id/btn_move_w_object"
+            app:layout_constraintStart_toStartOf="@+id/btn_move_w_object"
+            app:layout_constraintTop_toBottomOf="@+id/btn_move_w_object"/>
 
     <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnMoveActResult"
+            android:id="@+id/btn_move_activity_result"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
             android:layout_marginTop="16dp"
             android:background="@drawable/buttondraw"
             android:text="@string/move_activity_for_result"
-            app:layout_constraintEnd_toEndOf="@+id/btnDialNum"
-            app:layout_constraintStart_toStartOf="@+id/btnDialNum"
-            app:layout_constraintTop_toBottomOf="@+id/btnDialNum"/>
+            app:layout_constraintEnd_toEndOf="@+id/btn_move_dial_num"
+            app:layout_constraintStart_toStartOf="@+id/btn_move_dial_num"
+            app:layout_constraintTop_toBottomOf="@+id/btn_move_dial_num"/>
 
     <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/txtResultIntent"
+            android:id="@+id/text_result_intent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
@@ -80,9 +81,9 @@
             android:layout_marginTop="32dp"
             android:text="@string/resutl_from_activity"
             android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="@+id/btnMoveActResult"
-            app:layout_constraintStart_toStartOf="@+id/btnMoveActResult"
-            app:layout_constraintTop_toBottomOf="@+id/btnMoveActResult"/>
+            app:layout_constraintEnd_toEndOf="@+id/btn_move_activity_result"
+            app:layout_constraintStart_toStartOf="@+id/btn_move_activity_result"
+            app:layout_constraintTop_toBottomOf="@+id/btn_move_activity_result"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

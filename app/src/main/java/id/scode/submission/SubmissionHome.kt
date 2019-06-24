@@ -13,10 +13,11 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.snackbar.Snackbar
-import id.scode.exercise04ReyclerView.*
+import id.scode.exercise04ReyclerView.ItemClickSupport
+import id.scode.exercise04ReyclerView.ListView
 import id.scode.scholarshipexpertscodeidev.R
 import kotlinx.android.synthetic.main.activity_submission_home.*
-import java.util.ArrayList
+import java.util.*
 
 private val MY_PERMISSIONS_REQUEST_READ_CONTACTS = 1
 
@@ -105,7 +106,7 @@ class SubmissionHome : AppCompatActivity() {
         when (requestCode) {
             MY_PERMISSIONS_REQUEST_READ_CONTACTS -> {
                 // If request is cancelled, the result arrays are empty.
-                if (grantResults.size > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     // permission was granted, yay! Do the
                     // contacts-related task you need to do.
                 } else {
@@ -131,10 +132,11 @@ class SubmissionHome : AppCompatActivity() {
         adapterSubmission.listBookSubmission = yogi.listDua
         rv_category.adapter = adapterSubmission
 
-        ItemClickSupport.addTo(rv_category).setmOnItemClickListener { recyclerView, position, v -> showSelectedBook(yogi.listDua[position]) }
+        ItemClickSupport.addTo(rv_category).setmOnItemClickListener { _, position, _
+            -> showSelectedBook(yogi.listDua[position]) }
 
     }
-    fun showSelectedBook (bookSubmission: BookSubmission) {
+    private fun showSelectedBook (bookSubmission: BookSubmission) {
         Toast.makeText(this, "Kamu Memilih " + bookSubmission.judulBuku, Toast.LENGTH_SHORT).show()
 
 

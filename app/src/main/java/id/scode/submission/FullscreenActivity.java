@@ -1,19 +1,17 @@
 package id.scode.submission;
 
 import android.annotation.SuppressLint;
-
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import com.bumptech.glide.Glide;
-
 import id.scode.scholarshipexpertscodeidev.R;
+
+import java.util.Objects;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -24,11 +22,6 @@ public class FullscreenActivity extends AppCompatActivity {
     public static String EXTRA_BOOK = "extra_book";
     public static String EXTRA_IMG = "extra_img";
 
-    public TextView hrgBuku ;
-    public ImageView imgBuku;
-    public TextView link;
-    public TextView judul;
-    public TextView detailBook;
     /**
      * Whether or not the system UI should be auto-hidden after
      * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
@@ -78,25 +71,18 @@ public class FullscreenActivity extends AppCompatActivity {
         }
     };
     private boolean mVisible;
-    private final Runnable mHideRunnable = new Runnable() {
-        @Override
-        public void run() {
-            hide();
-        }
-    };
+    private final Runnable mHideRunnable = this::hide;
     /**
      * Touch listener to use for in-layout UI controls to delay hiding the
      * system UI. This is to prevent the jarring behavior of controls going away
      * while interacting with activity UI.
      */
-    private final View.OnTouchListener mDelayHideTouchListener = new View.OnTouchListener() {
-        @Override
-        public boolean onTouch(View view, MotionEvent motionEvent) {
-            if (AUTO_HIDE) {
-                delayedHide(AUTO_HIDE_DELAY_MILLIS);
-            }
-            return false;
+    @SuppressLint("ClickableViewAccessibility")
+    private final View.OnTouchListener mDelayHideTouchListener = (view, motionEvent) -> {
+        if (AUTO_HIDE) {
+            delayedHide(AUTO_HIDE_DELAY_MILLIS);
         }
+        return false;
     };
 
     @Override
@@ -106,17 +92,17 @@ public class FullscreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_fullscreen);
 
 
-        hrgBuku = findViewById(R.id.dummy_button_harga);
-        imgBuku = findViewById(R.id.item_photo_book_full);
+        TextView hrgBuku = findViewById(R.id.dummy_button_harga);
+        ImageView imgBuku = findViewById(R.id.item_photo_book_full);
 //
 // judulBukuContent = findViewById(R.id.fullscreen_content);
-        link = findViewById(R.id.fullscreen_content_above);
-        judul = findViewById(R.id.title_buku);
-        detailBook = findViewById(R.id.detail_buku);
+        TextView link = findViewById(R.id.fullscreen_content_above);
+        TextView judul = findViewById(R.id.title_buku);
+        TextView detailBook = findViewById(R.id.detail_buku);
 
         //for pojo data ===========================================
         BookSubmission bookSubmission = getIntent().getParcelableExtra(EXTRA_BOOK);
-        getSupportActionBar().setTitle("Melihat : "+bookSubmission.getJudulBuku());
+        Objects.requireNonNull(getSupportActionBar()).setTitle("Looking : "+bookSubmission.getJudulBuku());
 
         String text = "" +bookSubmission.getHrgBuku();
         hrgBuku.setText(text);
@@ -145,12 +131,7 @@ public class FullscreenActivity extends AppCompatActivity {
 
 
         // Set up the user interaction to manually show or hide the system UI.
-        mContentView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                toggle();
-            }
-        });
+        mContentView.setOnClickListener(view -> toggle());
 
         // Upon interacting with UI controls, delay any scheduled hide()
         // operations to prevent the jarring behavior of controls going away

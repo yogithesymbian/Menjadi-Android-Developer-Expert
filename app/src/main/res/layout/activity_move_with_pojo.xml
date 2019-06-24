@@ -5,17 +5,18 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="id.scode.exercise02MyIntent.MoveWithPojo">
+        tools:context="id.scode.exercise02MyIntent.MoveWithPojo"
+        android:id="@+id/clayout_move_with_pojo">
 
 
     <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/textPojoObjectMove"
+            android:id="@+id/text_data_move_w_pojo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="32dp"
-            android:text="ReceivedMoveWithObjectOfPojo"
+            android:text="@string/activityintent_text_receive_pojo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>

@@ -17,7 +17,7 @@ public class MoveWithPojo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_move_with_pojo);
 
-        TextView tvTextPojo = findViewById(R.id.textPojoObjectMove);
+        TextView tvTextPojo = findViewById(R.id.text_data_move_w_pojo);
 
         //calling class pojo Person to take parcelable
         Person myPersonPojo = getIntent().getParcelableExtra(EXTRA_PERSON);

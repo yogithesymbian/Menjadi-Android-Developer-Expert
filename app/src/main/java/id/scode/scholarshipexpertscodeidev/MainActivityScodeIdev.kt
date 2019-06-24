@@ -27,31 +27,31 @@ class MainActivityScodeIdev : AppCompatActivity()
          * ================================================================================
          */
 
-        btnActOpertorScode.setOnClickListener{
+        button_to_operator_activity.setOnClickListener{
             Log.d("MainActivity","Button Operator Clicked")
             val exerciseOne = Intent(this@MainActivityScodeIdev, ExerciseLatihanSatuK::class.java)
             startActivity(exerciseOne)
         }
 
-        btnMyIntentScode.setOnClickListener{
+        button_to_myintent_activity.setOnClickListener{
             Log.d("MainActivity","Button My Intent Clicked")
             val exerciseTwo = Intent(this@MainActivityScodeIdev , IntentScodExerciseK::class.java)
             startActivity(exerciseTwo)
         }
 
-        btnViewAndViewgroups.setOnClickListener{
+        button_to_view_group_activity.setOnClickListener{
             Log.d("MainActivity","Button View and ViewGroups Clicked")
             val exerciseThree = Intent(this@MainActivityScodeIdev, ViewGroupActivity::class.java)
             startActivity(exerciseThree)
         }
-        btnRecycleView.setOnClickListener{
+        button_to_recycler_activity.setOnClickListener{
             Log.d("MainActivity","Button Recycle View Clicked")
             val rv = Intent(this@MainActivityScodeIdev, ListView::class.java)
             startActivity(rv)
         }
 
 
-        btnSubmission.setOnClickListener{
+        button_to_submission.setOnClickListener{
             startActivity(Intent(this@MainActivityScodeIdev, SubmissionHome::class.java))
         }
 
@@ -60,7 +60,7 @@ class MainActivityScodeIdev : AppCompatActivity()
          * ========================================================================
          */
 
-        btnFragment.setOnClickListener{
+        btn_to_fragment.setOnClickListener{
             val fm = Intent(this@MainActivityScodeIdev, MyFlexibleFragmentScode::class.java)
             startActivity(fm)
             finish()

@@ -1,5 +1,6 @@
 package id.scode.exercise02MyIntent;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 //import android.nfc.Tag;
@@ -26,28 +27,29 @@ public class IntentScodExercise extends AppCompatActivity implements View.OnClic
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intent_scod_exercise);
 
-        Button btnMoveActivity = findViewById(R.id.btnActivity);
+        Button btnMoveActivity = findViewById(R.id.btn_move_activity);
         btnMoveActivity.setOnClickListener(this);
 
-        Button btnMoveWithData = findViewById(R.id.btnMoveWdata);
+        Button btnMoveWithData = findViewById(R.id.btn_move_w_data);
         btnMoveWithData.setOnClickListener(this);
 
         //P O J O -- GETTER AND SETTER == PARCELABLE
-        Button btnMoveWithPojoObject = findViewById(R.id.btnMoveWobject);
+        Button btnMoveWithPojoObject = findViewById(R.id.btn_move_w_object);
         btnMoveWithPojoObject.setOnClickListener(this);
 
-        Button btnDialIntentExplicit = findViewById(R.id.btnDialNum);
+        Button btnDialIntentExplicit = findViewById(R.id.btn_move_dial_num);
         btnDialIntentExplicit.setOnClickListener(this);
 
         //============I N T E N T ==== R E S U L T
 
-        Button moveWithResult = findViewById(R.id.btnMoveActResult);
+        Button moveWithResult = findViewById(R.id.btn_move_activity_result);
         moveWithResult.setOnClickListener(this);
 
-        textResultIntent = findViewById(R.id.txtResultIntent);
+        textResultIntent = findViewById(R.id.text_result_intent);
 
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -56,7 +58,7 @@ public class IntentScodExercise extends AppCompatActivity implements View.OnClic
             if (resultCode == IntentResultActivity.RESULT_CODE )
             {
                 int selectedValue = data.getIntExtra(IntentResultActivity.EXTRA_SELECTED_VALUE, 0);
-                textResultIntent.setText("Hasil : " +selectedValue);
+                textResultIntent.setText("Result : " +selectedValue);
             }
         }
     }
@@ -66,13 +68,13 @@ public class IntentScodExercise extends AppCompatActivity implements View.OnClic
     {
         switch (v.getId())
         {
-            case R.id.btnActivity:
+            case R.id.btn_move_activity:
                 Log.d(TAG,"Button Activity Clicked");
                 //                                              this ini / asal     / tujuan activity
                 Intent moveIntent = new Intent(IntentScodExercise.this, MoveActivity.class);
                 startActivity(moveIntent);
                 break;
-            case R.id.btnMoveWdata:
+            case R.id.btn_move_w_data:
                 Log.d(TAG, "Button Activity Move With Data Clicked");
                 Intent moveIntentWithData = new Intent(IntentScodExercise.this, MoveWithData.class);
 
@@ -82,7 +84,7 @@ public class IntentScodExercise extends AppCompatActivity implements View.OnClic
 
                 startActivity(moveIntentWithData);
                 break;
-            case R.id.btnDialNum:
+            case R.id.btn_move_dial_num:
                 Log.d(TAG,"Button Activity Move Explicit Intent");
 
                 String phoneNum = "081545778612";
@@ -91,7 +93,7 @@ public class IntentScodExercise extends AppCompatActivity implements View.OnClic
                 startActivity(dialPhoneIntent);
                 break;
 
-            case R.id.btnMoveWobject:
+            case R.id.btn_move_w_object:
 
                 Log.d(TAG,"Button Activity Move With Pojo");
 
@@ -105,7 +107,7 @@ public class IntentScodExercise extends AppCompatActivity implements View.OnClic
                 moveWithObjetPojo.putExtra(MoveWithPojo.EXTRA_PERSON, myPersonPojoCalling);
                 startActivity(moveWithObjetPojo);
                 break;
-            case R.id.btnMoveActResult:
+            case R.id.btn_move_activity_result:
                 Log.d(TAG,"Button Activity Move With Result");
                 Intent moveWithResultData = new Intent(IntentScodExercise.this, IntentResultActivity.class);
                 startActivityForResult(moveWithResultData, REQUEST_CODE);

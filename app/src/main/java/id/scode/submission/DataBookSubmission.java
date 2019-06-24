@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class DataBookSubmission
 {
-    public static String[][] data = new String[][]{
+    private static String[][] data = new String[][]{
             {"News", "mainan anak muslim buku pintar layar sentuh", "https://ecs7.tokopedia.net/img/cache/700/product-1/2018/7/17/13264308/13264308_98bc2065-7059-4e2f-81ac-d06d07416b34_1000_561.jpg","Rp 82.000","Buku ini terdiri dari (10 halaman / halaman bagian kanan saja yang bisa berbunyi bila ditekan).\n" +
                     "\n" +
                     "Fungsi e-book :\n" +
@@ -54,7 +54,7 @@ public class DataBookSubmission
 
     public static ArrayList<BookSubmission> getListData()
     {
-        BookSubmission bookSubmission = null;
+        BookSubmission bookSubmission;
 
         ArrayList<BookSubmission> list = new ArrayList<>();
 

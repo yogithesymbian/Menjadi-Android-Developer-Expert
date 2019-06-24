@@ -17,20 +17,20 @@ public class MyFlexibleFragmentScode extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_flexible_fragment_scode);
 
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        FragmentManager mFragmentManager = getSupportFragmentManager();
+        FragmentTransaction mFragmentTransaction = mFragmentManager.beginTransaction();
 
         Log.d("INSTANCE", "Method di instance [ScodeFragment]");
-        ScodeFragment scodeFragment = new ScodeFragment();
+        ScodeFragment mScodeFragment = new ScodeFragment();
 
-        Fragment fragment = fragmentManager.findFragmentByTag(ScodeFragment.class.getSimpleName());
+        Fragment fragment = mFragmentManager.findFragmentByTag(ScodeFragment.class.getSimpleName());
         if (!(fragment instanceof ScodeFragment))
         {
-            fragmentTransaction.add(R.id.frame_container, scodeFragment, ScodeFragment.class.getSimpleName());
+            mFragmentTransaction.add(R.id.frame_container, mScodeFragment, ScodeFragment.class.getSimpleName());
 
             Log.d("MyFlexibleFragment","Fragment Name" +ScodeFragment.class.getSimpleName());
 
-            fragmentTransaction.commit();
+            mFragmentTransaction.commit();
         }
 
     }

@@ -1,24 +1,21 @@
 package id.scode.submission;
 
 import android.content.Context;
-
-import androidx.annotation.NonNull;
-import com.google.android.material.snackbar.Snackbar;
-import androidx.cardview.widget.CardView;
-import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
+import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-
-import java.util.ArrayList;
-
+import com.google.android.material.snackbar.Snackbar;
 import id.scode.exercise04ReyclerView.CustomeOnClickListener;
 import id.scode.scholarshipexpertscodeidev.R;
+
+import java.util.ArrayList;
 
 /**
  * Created by Dani on 12/24/2018.
@@ -28,7 +25,7 @@ import id.scode.scholarshipexpertscodeidev.R;
 public class AdapterSubmission extends RecyclerView.Adapter<AdapterSubmission.AdapterSubmissionHolder>
 {
     private Context context;
-    private ArrayList<BookSubmission> listBookSubmission;
+    public ArrayList<BookSubmission> listBookSubmission;
 
     public AdapterSubmission(Context context)
     {
@@ -36,7 +33,7 @@ public class AdapterSubmission extends RecyclerView.Adapter<AdapterSubmission.Ad
     }
 
 
-    public ArrayList<BookSubmission> getListBookSubmission() {
+    private ArrayList<BookSubmission> getListBookSubmission() {
         return listBookSubmission;
     }
 
@@ -59,27 +56,19 @@ public class AdapterSubmission extends RecyclerView.Adapter<AdapterSubmission.Ad
         adapterSubmissionHolder.news.setText(bookSubmission.getNewsOlder());
 
 
-        adapterSubmissionHolder.simpanBuku.setOnClickListener(new CustomeOnClickListener(position, new CustomeOnClickListener.OnItemClickCallBack() {
-            @Override
-            public void onItemClicked(View view, int postition) {
+        adapterSubmissionHolder.simpanBuku.setOnClickListener(new CustomeOnClickListener(position, (view, postition) -> {
 //                Toast.makeText(context,"Buku : " +getListBookSubmission().get(position).getJudulBuku() + " [Tersimpan] " , Toast.LENGTH_SHORT).show();
-                Snackbar snackbar = Snackbar
-                        .make(view, "[Buku Tersimpan] " +getListBookSubmission().get(position).getJudulBuku() , Snackbar.LENGTH_LONG)
+            Snackbar snackbar = Snackbar
+                    .make(view, "[Buku Tersimpan] " +getListBookSubmission().get(position).getJudulBuku() , Snackbar.LENGTH_LONG)
 //                        .make(view, "Buku " +getListBookSubmission().get(position).getJudulBuku() + " [Tersimpan] " , Snackbar.LENGTH_LONG)
-                        .setAction("BATAL", new View.OnClickListener() {
-                            @Override
-                            public void onClick(View view) {
-                                Snackbar snackbar1 = Snackbar.make(view, "[Unsaved Book] " +getListBookSubmission().get(position).getJudulBuku() , Snackbar.LENGTH_LONG);
-                                snackbar1.show();
-                            }
-                        });
+                    .setAction("BATAL", view1 -> {
+                        Snackbar snackbar1 = Snackbar.make(view1, "[Unsaved Book] " +getListBookSubmission().get(position).getJudulBuku() , Snackbar.LENGTH_LONG);
+                        snackbar1.show();
+                    });
 
-                snackbar.show();
-            }
+            snackbar.show();
         }));
-        adapterSubmissionHolder.cardView.setOnClickListener(new CustomeOnClickListener(position, new CustomeOnClickListener.OnItemClickCallBack() {
-            @Override
-            public void onItemClicked(View view, int postition) {
+        adapterSubmissionHolder.cardView.setOnClickListener(new CustomeOnClickListener(position, (view, postition) -> {
 
 //
 //                Intent intent = null;
@@ -111,7 +100,6 @@ public class AdapterSubmission extends RecyclerView.Adapter<AdapterSubmission.Ad
 //                Intent moveWithObjetPojo = new Intent(IntentScodExercise.this, MoveWithPojo.class);
 //                moveWithObjetPojo.putExtra(MoveWithPojo.EXTRA_PERSON, myPersonPojoCalling);
 //                startActivity(moveWithObjetPojo);
-            }
         }));
 
         Glide.with(context)

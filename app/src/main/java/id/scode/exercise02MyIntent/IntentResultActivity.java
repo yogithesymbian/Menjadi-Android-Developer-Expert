@@ -23,7 +23,7 @@ public class IntentResultActivity extends AppCompatActivity implements View.OnCl
         Button chooseResult = findViewById(R.id.btn_choose_number);
         chooseResult.setOnClickListener(this);
 
-        radioNum = findViewById(R.id.radioGroup);
+        radioNum = findViewById(R.id.exercise_intent_radioGroup);
 
     }
 

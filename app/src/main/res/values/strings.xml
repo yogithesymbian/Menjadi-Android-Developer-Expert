@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">ScholarshipExpertScodeIDEV</string>
     <string name="operator">[01] OPERATOR</string>
-    <string name="panjang">Panjang</string>
-    <string name="lebar">Lebar</string>
-    <string name="hasil">Hasil</string>
-    <string name="hasil_operator">Hasil Operator</string>
+    <string name="exercisesatu_length">Panjang</string>
+    <string name="exercisesatu_width">Lebar</string>
+    <string name="exercisesatu_result">Hasil</string>
+    <string name="exercisesatu_result_tv">Hasil Operator</string>
     <string name="_02_my_intent">[02] MY INTENT</string>
     <string name="activity_latihan_bar_volume">Activity : Latihan Bar Volume</string>
     <string name="tinggi">Tinggi</string>
@@ -85,7 +85,7 @@
         "\n\n"
         "(+) after they had slept, they went to rektor.\n"
         "(-) after they had slept, they did not go to rektor.\n"
-        "(?) after they had slept, did they go to to rektor.\n"
+        "(?) after they had slept, did they go to rektor.\n"
     </string>
     <string name="action_settings">Settings</string>
     <string name="view_and_viewgroups">View and Viewgroups</string>
@@ -154,4 +154,23 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="to_category">to category</string>
+    <string name="exercisesatu_height">Height</string>
+    <string name="fraghome_to_frag_category">To Fragment Category</string>
+    <string name="main_new_thema">New Thema</string>
+    <string name="main_submission">NaBuINA</string>
+    <string name="activityfancy_larger">larger</string>
+    <string name="activityfancy_custome">custome</string>
+    <string name="activitymain_submission">Submission</string>
+    <string name="menu_import_image">Import</string>
+    <string name="menu_galery">Gallery</string>
+    <string name="menu_slideshot">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_group_communicate">Communicate</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="activityfancy_color">color</string>
+    <string name="activityfancy_longertext">longerText</string>
+    <string name="activityfancy_cs_anim">custome animation</string>
+    <string name="activityintent_text_receive_pojo">ReceivedMoveWithObjectOfPojo</string>
+    <string name="dprofile_desc">NaBuINA ( Buku Anak Islam Berbahasa Indonesia - Arab ) adalah apps yang saya buat khusus untuk menyelessaikan kelas dicoding. Dalam tahap tester (percobaan) / Maintenance banyak sekali bug dan beberapa telah saya perbaiki secara umum, Semoga Apps ini bermanfaat untuk kedapanya , jika dilakukan tahap pengembangan.     Apps ini Khusus untuk membaca buku - buku dengan category Agama / Pendidikan Muslim , Apps ini memiliki feature  1. Baca Offline  2. Baca Online  3. Transaksi Jual Beli Buku  4. Banyak Buku / E-Book Gratis   Tentu Apps ini Masih V1.1 Feature di atas belum di buat :D</string>
 </resources>

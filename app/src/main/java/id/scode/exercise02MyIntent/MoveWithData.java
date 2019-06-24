@@ -19,7 +19,7 @@ public class MoveWithData extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_move_with_data);
 
-        TextView tvTextDataIntent = findViewById(R.id.transceive_data); //transceive data
+        TextView tvTextDataIntent = findViewById(R.id.text_transceive_data); //transceive data
         tvTextDataIntent.setOnClickListener(this);
 
         //==========================

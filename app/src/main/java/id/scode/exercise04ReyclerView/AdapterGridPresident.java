@@ -1,20 +1,17 @@
 package id.scode.exercise04ReyclerView;
 
 import android.content.Context;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import id.scode.scholarshipexpertscodeidev.R;
 
 import java.util.ArrayList;
-
-import id.scode.scholarshipexpertscodeidev.R;
 
 /**
  * Created by Dani on 12/23/2018.
@@ -26,19 +23,19 @@ public class AdapterGridPresident extends RecyclerView.Adapter<AdapterGridPresid
 
     private Context context;
 
-    public ArrayList<Presiden> getListPresident()
+    private ArrayList<Presiden> getListPresident()
     {
         return listPresident;
     }
 
-    public void setListPresident(ArrayList<Presiden> listPresident)
+    void setListPresident(ArrayList<Presiden> listPresident)
     {
         this.listPresident = listPresident;
     }
 
     private ArrayList<Presiden> listPresident;
 
-    public AdapterGridPresident(Context context)
+    AdapterGridPresident(Context context)
     {
         this.context = context;
     }

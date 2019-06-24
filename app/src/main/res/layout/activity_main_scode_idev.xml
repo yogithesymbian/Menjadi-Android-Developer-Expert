@@ -8,7 +8,8 @@
         android:background="@color/uiCustomeColor"
         android:orientation="vertical"
         android:fillViewport="true"
-        tools:context="id.scode.scholarshipexpertscodeidev.MainActivityScodeIdev">
+        tools:context="id.scode.scholarshipexpertscodeidev.MainActivityScodeIdev"
+        android:id="@+id/scroll_main">
 
     <LinearLayout
             android:layout_width="match_parent"
@@ -16,15 +17,16 @@
             android:orientation="vertical"
             android:layout_margin="16dp"
             android:background="@color/uiCustomeColor1"
-            android:id="@+id/linearLayout">
+            android:id="@+id/llayout_main">
 
         <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp">
+                android:layout_margin="8dp"
+                android:id="@+id/clayout_main">
 
             <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnActOpertorScode"
+                    android:id="@+id/button_to_operator_activity"
                     style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
                     android:layout_width="238dp"
                     android:layout_height="wrap_content"
@@ -35,30 +37,30 @@
                     android:textColor="@color/whiteB3"
                     android:textSize="12sp"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="@+id/androidNewbie"
-                    app:layout_constraintStart_toStartOf="@+id/androidNewbie"
-                    app:layout_constraintTop_toBottomOf="@+id/androidNewbie"
-                    tools:ignore="SmallSp"
+                    app:layout_constraintEnd_toEndOf="@+id/button_for_label2"
+                    app:layout_constraintStart_toStartOf="@+id/button_for_label2"
+                    app:layout_constraintTop_toBottomOf="@+id/button_for_label2"
+                    tools:ignore="RtlHardcoded,SmallSp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginStart="8dp"
                     app:layout_constraintHorizontal_bias="0.51"/>
 
             <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/textviewSatu"
+                    android:id="@+id/text_label_operator"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/activity_latihan_bar_volume"
                     android:textColor="@color/blackB3"
                     android:textSize="10sp"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/btnActOpertorScode"
-                    app:layout_constraintStart_toStartOf="@+id/btnActOpertorScode"
-                    app:layout_constraintTop_toBottomOf="@+id/androidNewbie"
+                    app:layout_constraintBottom_toTopOf="@+id/button_to_operator_activity"
+                    app:layout_constraintStart_toStartOf="@+id/button_to_operator_activity"
+                    app:layout_constraintTop_toBottomOf="@+id/button_for_label2"
                     tools:ignore="SmallSp"/>
 
             <com.google.android.material.button.MaterialButton
                     style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
-                    android:id="@+id/btnMyIntentScode"
+                    android:id="@+id/button_to_myintent_activity"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
@@ -67,14 +69,14 @@
                     android:gravity="left|center"
                     android:textColor="@color/whiteB3"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="@+id/btnActOpertorScode"
-                    app:layout_constraintStart_toStartOf="@+id/btnActOpertorScode"
-                    app:layout_constraintTop_toBottomOf="@+id/btnActOpertorScode"
-                    tools:ignore="SmallSp"/>
+                    app:layout_constraintEnd_toEndOf="@+id/button_to_operator_activity"
+                    app:layout_constraintStart_toStartOf="@+id/button_to_operator_activity"
+                    app:layout_constraintTop_toBottomOf="@+id/button_to_operator_activity"
+                    tools:ignore="RtlHardcoded,SmallSp"/>
 
 
             <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/textView"
+                    android:id="@+id/text_label_myintent"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -84,16 +86,16 @@
                     android:textColor="@color/blackB3"
                     android:textSize="12sp"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/btnMyIntentScode"
-                    app:layout_constraintEnd_toEndOf="@+id/btnMyIntentScode"
+                    app:layout_constraintBottom_toTopOf="@+id/button_to_myintent_activity"
+                    app:layout_constraintEnd_toEndOf="@+id/button_to_myintent_activity"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/btnMyIntentScode"
-                    app:layout_constraintTop_toBottomOf="@+id/btnActOpertorScode"/>
+                    app:layout_constraintStart_toStartOf="@+id/button_to_myintent_activity"
+                    app:layout_constraintTop_toBottomOf="@+id/button_to_operator_activity"/>
 
 
             <com.google.android.material.button.MaterialButton
                     style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
-                    android:id="@+id/btnViewAndViewgroups"
+                    android:id="@+id/button_to_view_group_activity"
 
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -103,13 +105,14 @@
                     android:textSize="12sp"
                     android:textColor="@color/whiteB3"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="@+id/btnMyIntentScode"
-                    app:layout_constraintStart_toStartOf="@+id/btnMyIntentScode"
-                    app:layout_constraintTop_toBottomOf="@+id/btnMyIntentScode"/>
+                    app:layout_constraintEnd_toEndOf="@+id/button_to_myintent_activity"
+                    app:layout_constraintStart_toStartOf="@+id/button_to_myintent_activity"
+                    app:layout_constraintTop_toBottomOf="@+id/button_to_myintent_activity"
+                    tools:ignore="RtlHardcoded"/>
 
 
             <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/textViewTiga"
+                    android:id="@+id/text_label_vg"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
@@ -117,16 +120,16 @@
                     android:textColor="@color/blackB3"
                     android:textSize="12sp"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/btnViewAndViewgroups"
-                    app:layout_constraintEnd_toEndOf="@+id/btnViewAndViewgroups"
+                    app:layout_constraintBottom_toTopOf="@+id/button_to_view_group_activity"
+                    app:layout_constraintEnd_toEndOf="@+id/button_to_view_group_activity"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/btnViewAndViewgroups"
-                    app:layout_constraintTop_toBottomOf="@+id/btnMyIntentScode"/>
+                    app:layout_constraintStart_toStartOf="@+id/button_to_view_group_activity"
+                    app:layout_constraintTop_toBottomOf="@+id/button_to_myintent_activity"/>
 
 
             <com.google.android.material.button.MaterialButton
                     style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
-                    android:id="@+id/btnRecycleView"
+                    android:id="@+id/button_to_recycler_activity"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
@@ -136,31 +139,32 @@
                     android:textColor="@color/whiteB3"
                     android:textSize="12sp"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="@+id/btnViewAndViewgroups"
-                    app:layout_constraintStart_toStartOf="@+id/btnViewAndViewgroups"
-                    app:layout_constraintTop_toBottomOf="@+id/btnViewAndViewgroups"/>
+                    app:layout_constraintEnd_toEndOf="@+id/button_to_view_group_activity"
+                    app:layout_constraintStart_toStartOf="@+id/button_to_view_group_activity"
+                    app:layout_constraintTop_toBottomOf="@+id/button_to_view_group_activity"
+                    tools:ignore="RtlHardcoded"/>
 
             <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/textViewLima"
+                    android:id="@+id/text_label_submission"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Submission"
+                    android:text="@string/activitymain_submission"
                     android:textColor="@color/blackB3"
                     android:textSize="12sp"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="@+id/btnSubmission"
+                    app:layout_constraintEnd_toEndOf="@+id/button_to_submission"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/btnSubmission"
-                    app:layout_constraintTop_toBottomOf="@+id/btnRecycleView"/>
+                    app:layout_constraintStart_toStartOf="@+id/button_to_submission"
+                    app:layout_constraintTop_toBottomOf="@+id/button_to_recycler_activity"/>
 
             <com.google.android.material.button.MaterialButton
                     style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
-                    android:id="@+id/btnSubmission"
+                    android:id="@+id/button_to_submission"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
                     android:background="@drawable/buttondraw"
-                    android:text="NaBuINA"
+                    android:text="@string/main_submission"
                     app:iconSize="25dp"
                     app:iconPadding="8dp"
                     android:textAllCaps="false"
@@ -169,31 +173,32 @@
                     android:textColor="@color/whiteB3"
                     android:textSize="12sp"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="@+id/btnRecycleView"
-                    app:layout_constraintStart_toStartOf="@+id/btnRecycleView"
-                    app:layout_constraintTop_toBottomOf="@+id/btnRecycleView"/>
+                    app:layout_constraintEnd_toEndOf="@+id/button_to_recycler_activity"
+                    app:layout_constraintStart_toStartOf="@+id/button_to_recycler_activity"
+                    app:layout_constraintTop_toBottomOf="@+id/button_to_recycler_activity"
+                    tools:ignore="RtlHardcoded"/>
 
             <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/textViewEmpat"
+                    android:id="@+id/text_label_rv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/recycler_view"
                     android:textColor="@color/blackB3"
                     android:textSize="12sp"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="@+id/btnRecycleView"
+                    app:layout_constraintEnd_toEndOf="@+id/button_to_recycler_activity"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/btnRecycleView"
-                    app:layout_constraintTop_toBottomOf="@+id/btnViewAndViewgroups"/>
+                    app:layout_constraintStart_toStartOf="@+id/button_to_recycler_activity"
+                    app:layout_constraintTop_toBottomOf="@+id/button_to_view_group_activity"/>
 
 
             <View
-                    android:id="@+id/pageringBro"
+                    android:id="@+id/view_break"
                     android:layout_width="match_parent"
                     android:layout_height="5dp"
                     android:background="@color/uiCustomeColor"
-                    app:layout_constraintBottom_toTopOf="@+id/btnExpertDicoding"
-                    app:layout_constraintTop_toBottomOf="@+id/btnSubmission"
+                    app:layout_constraintBottom_toTopOf="@+id/button_for_label1"
+                    app:layout_constraintTop_toBottomOf="@+id/button_to_submission"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp">
 
@@ -201,9 +206,9 @@
 
             <com.google.android.material.button.MaterialButton
                     style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
-                    android:id="@+id/btnExpertDicoding"
+                    android:id="@+id/button_for_label1"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     app:iconPadding="4dp"
                     android:textSize="16sp"
@@ -212,17 +217,17 @@
                     android:text="@string/menjadi_android_dev_expert"
                     android:textAllCaps="false"
                     android:textStyle="italic"
-                    app:layout_constraintEnd_toEndOf="@+id/androidNewbie"
-                    app:layout_constraintStart_toStartOf="@+id/androidNewbie"
+                    app:layout_constraintEnd_toEndOf="@+id/button_for_label2"
+                    app:layout_constraintStart_toStartOf="@+id/button_for_label2"
                     android:layout_marginEnd="8dp"
-                    app:layout_constraintTop_toBottomOf="@+id/btnSubmission"
+                    app:layout_constraintTop_toBottomOf="@+id/button_to_submission"
                     android:layout_marginTop="16dp"/>
 
             <com.google.android.material.button.MaterialButton
                     style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
                     app:elevation="5dp"
                     app:iconPadding="4dp"
-                    android:id="@+id/androidNewbie"
+                    android:id="@+id/button_for_label2"
                     android:layout_width="match_parent"
                     android:gravity="center"
                     android:layout_height="wrap_content"
@@ -241,20 +246,32 @@
 
             <com.google.android.material.button.MaterialButton
                     style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
-                    android:id="@+id/btnFragment"
+                    android:id="@+id/btn_to_fragment"
 
                     android:layout_width="238dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/_05_fragment_activty"
-                    android:textSize="11sp"
+                    android:textSize="12sp"
                     android:textColor="@color/whiteB3"
                     android:textStyle="bold"
-                    app:layout_constraintTop_toBottomOf="@+id/btnExpertDicoding"
-                    app:layout_constraintEnd_toEndOf="@+id/btnExpertDicoding"
-                    app:layout_constraintStart_toStartOf="@+id/btnExpertDicoding"
-                    android:layout_marginBottom="32dp"
-                    app:layout_constraintBottom_toBottomOf="parent"/>
+                    app:layout_constraintTop_toBottomOf="@+id/button_for_label1"
+                    app:layout_constraintEnd_toEndOf="@+id/button_for_label1"
+                    app:layout_constraintStart_toStartOf="@+id/button_for_label1"
+                    tools:ignore="SmallSp"/>
+
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_to_leaerning_expert_droid"
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="@string/main_new_thema"
+                    app:icon="@drawable/ic_home_black_24dp"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_to_fragment"
+                    app:layout_constraintEnd_toEndOf="@+id/btn_to_fragment"
+                    app:layout_constraintStart_toStartOf="@+id/btn_to_fragment"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="16dp"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
